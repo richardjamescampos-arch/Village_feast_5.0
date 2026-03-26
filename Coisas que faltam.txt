@@ -1,0 +1,11 @@
+tema: Pegar receitas para alimentar a vila, achar a vila pelo mini mapa, e por fim começa o jogo.
+-Colocar um cenário com texturas de árvores, grama, animais, inimigos, frutas (tudo em pixel art(vale pro jogo todo))
+-Quando andar o mapa acompanha
+-so abre o bau 1 vez
+-quando clica pra falar com NPC vai numa tela separada onde c fala com ele
+-pegar animação de andado personagem
+-ter no inventario uma "crafting table" e só por la vc consegue fazer as receitas
+-
+Informação importante: bit.ly/4bxX0G8, TUTORIAL PARA ENVIAR O JOGO, EXPLICANDO SOBRE O QUE É O JOGO, COMO VOCÊ USOU A IA sem clicar no submit.
+
+itch.io/jam/ggjnext2026 onde vai enviar o jogo

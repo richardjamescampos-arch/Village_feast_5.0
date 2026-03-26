@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outgrow Hunger: Village Feast</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <div id="game-container"></div>
+  <div id="start-screen">
+    <h1>Outgrow Hunger: Village Feast</h1>
+    <p>Explore the wild, gather ingredients, and feed your village.</p>
+    <button id="start-btn">START GAME</button>
+    <div class="controls-hint">
+      WASD: Move | E/Click: Interact/Hunt | C: Food Codex
+    </div>
+  </div>
+  <div id="ui-layer">
+    <div id="hud">
+      <div id="minimap-container">
+        <canvas id="minimap"></canvas>
+      </div>
+      <div id="stats">
+        <div class="stat">Village Status: <span id="village-status">Exploring...</span></div>
+      </div>
+    </div>
+    <div id="navigation-guide">
+      <div id="village-arrow">▲</div>
+      <div class="label">Village</div>
+    </div>
+    <div id="controls-box">
+      <h3>Controls</h3>
+      <ul>
+        <li><strong>WASD</strong>: Move</li>
+        <li><strong>E / Click</strong>: Interact / Hunt</li>
+        <li><strong>C</strong>: Food Codex</li>
+        <li><strong>ESC</strong>: Menu / Unlock Mouse</li>
+      </ul>
+    </div>
+    <div id="interaction-prompt" class="hidden">Press [E] to interact</div>
+    <div id="codex-window" class="modal hidden">
+      <h2>Food Codex</h2>
+      <div id="recipe-list"></div>
+    </div>
+    <div id="npc-dialog-screen" class="modal hidden">
+      <h2 id="npc-name-title">NPC</h2>
+      <p id="npc-dialog-text" style="margin:20px 0; font-size:1.1rem; color:#fff;">I am so hungry... Do you have any
+        cooked meals or berries?</p>
+      <div class="modal-actions">
+        <button id="feed-npc-btn" onclick="window.feedNPCCurrent();" class="method-btn">Give Food</button>
+        <button onclick="window.closeAllMenus();" class="ing-btn">Leave</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
